@@ -17,3 +17,14 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'Viresh ASoC'
+    applications: '94614bb6-7805-4655-8d29-7a72f95a144d'
+    scanname: 'AzureDevOps Scan1'
+    scantype: 'dynamic'
+    dynamicType: 'DAST'
+    scanURL: 'https://demo.testfire.net/'
+    network: 'public'
+    optimization: 'fastest'
+    email: true
