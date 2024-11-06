@@ -1,4 +1,11 @@
 # Starter pipeline
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'Viresh ASoC'
+    applications: '94614bb6-7805-4655-8d29-7a72f95a144d'
+    scanname: 'CA Demo DevSecOps Demo1'
+    scantype: 'static'
+    scanMethod: 'IRX'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
